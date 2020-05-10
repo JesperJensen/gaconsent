@@ -1,0 +1,15 @@
+export const textDefaults = {
+  textConsent: `This page use cookies. You can change which cookies you want to accept`,
+  textPreferences: `Select cookies you want to accept`,
+  textAnalytics: `Analytics cookies (__analytics__)`,
+  textTechnical: `Technical cookies: (__technical__)`,
+  textFunctional: `Functional cookies: (__functional__)`,
+  textCommercial: `Commercial cookies: (__commercial__)`,
+  textAnalyticsInfo: `The Website uses cookies that are used to provide with statistics.`,
+  textTechnicalInfo: `The Website uses cookies that are solely for technical reasons.`,
+  textFunctionalInfo: `The website uses cookies that are used solely to make the site more user-friendly.`,
+  textCommercialInfo: `The website uses third-party cookies that are used to provide the user with relevant advertisements.`,
+  showPreferencesButtonText: "Preferences...",
+  savePreferencesButtonText: "Save",
+  acceptButtonText: "OK",
+};
