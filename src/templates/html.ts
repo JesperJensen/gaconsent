@@ -6,8 +6,8 @@ export let html = `
         <p>__textConsent__</p>
       </div>
       <div class="gaconsent-buttons">
-        <button id="gaconsent-showPreferences" onclick="showPreferences()">__showPreferencesButtonText__</button>
-        <button id="gaconsent-accept" onclick="updateLocalStorage(document.querySelectorAll('input.gaconsent-checkbox'));doConsent();">__acceptButtonText__</button>
+        <button id="gaconsent-showPreferences" onclick="gaconsent_showPreferences()">__showPreferencesButtonText__</button>
+        <button id="gaconsent-accept" onclick="gaconsent_updateLocalStorage(document.querySelectorAll('input.gaconsent-checkbox'));gaconsent_doConsent();">__acceptButtonText__</button>
       </div>
     </div>
   </div>
@@ -35,7 +35,7 @@ export let html = `
         <div class="gaconsent-cookie-scroll-panel">__commercialPlaceholder__</div>
       </div>
       <div class="gaconsent-buttons">
-        <button id="gaconsent-savePreferences" onclick="savePreferences(document.querySelectorAll('input.gaconsent-checkbox'))">__savePreferencesButtonText__</button>
+        <button id="gaconsent-savePreferences" onclick="gaconsent_savePreferences(document.querySelectorAll('input.gaconsent-checkbox'))">__savePreferencesButtonText__</button>
       </div>
     </div>
   </div>

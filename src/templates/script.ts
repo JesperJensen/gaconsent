@@ -1,6 +1,7 @@
 export let script = `
 <script async src="https://www.googletagmanager.com/gtag/js?id=__gaId__"></script>
 <script type="text/javascript">
+(() => {
 const disableStr = 'ga-disable-' + '__gaId__'
 const analyticsCookies = 'analyticsCookies'
 const technicalCookies = 'technicalCookies'
@@ -122,5 +123,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     showConsent()
   }
 })
+window.gaconsent_doConsent = doConsent;
+window.gaconsent_showConsent = showConsent;
+window.gaconsent_updateLocalStorage = updateLocalStorage;
+window.gaconsent_savePreferences = savePreferences;
+window.gaconsent_showPreferences = showPreferences;
+
+})()
 </script>
   `;

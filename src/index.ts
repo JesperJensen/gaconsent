@@ -20,7 +20,7 @@ export default class GAConsent {
   }
   initCheckboxes = () => {
     // initialize injected checkboxes depending on options (default/user options)
-    const checkboxes: Array<HTMLInputElement> = Array.from(
+    const checkboxes: HTMLInputElement[] = Array.from(
       document.querySelectorAll("input.gaconsent-checkbox")
     );
     Object.keys(cookieTypes).forEach((type, ix) => {
