@@ -1,6 +1,6 @@
 {
   "name": "gaconsent",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Easy handle cookies consent on homepage",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

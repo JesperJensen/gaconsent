@@ -27,9 +27,10 @@ const doConsent = () => {
 
 const gaOptOut = () => {
   window[disableStr] = true
-  document.cookie = '_gat_gtag___gaId__=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-  document.cookie = '_gid=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-  document.cookie = '_ga=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  const domain = document.domain;
+  document.cookie = '_gat_gtag___gaId__=; expires=Thu, 01 Jan 1970 00:00:01 GMT; domain=' + domain + '; path=/';
+  document.cookie = '_gid=; expires=Thu, 01 Jan 1970 00:00:01 GMT; domain=' + domain + '; path=/';
+  document.cookie = '_ga=; expires=Thu, 01 Jan 1970 00:00:01 GMT; domain=' + domain + '; path=/';
 }  
 
 const gaOptIn = () => {
