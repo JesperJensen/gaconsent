@@ -27,10 +27,14 @@ const doConsent = () => {
 
 const gaOptOut = () => {
   window[disableStr] = true
-  const domain = '.' + document.domain.split(".").splice(-2).join(".");
+  const domain = document.domain.split(".").splice(-2).join(".");
   document.cookie = '_gat_gtag___gaId__=; expires=Thu, 01 Jan 1970 00:00:01 GMT; domain=' + domain + '; path=/';
   document.cookie = '_gid=; expires=Thu, 01 Jan 1970 00:00:01 GMT; domain=' + domain + '; path=/';
   document.cookie = '_ga=; expires=Thu, 01 Jan 1970 00:00:01 GMT; domain=' + domain + '; path=/';
+  // try without domain & path eg. localhost
+  document.cookie = '_gat_gtag___gaId__=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  document.cookie = '_gid=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  document.cookie = '_ga=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }  
 
 const gaOptIn = () => {
