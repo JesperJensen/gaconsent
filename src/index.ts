@@ -14,9 +14,9 @@ export default class GAConsent {
   html: string;
   constructor(gaId: string, options?: IOptions) {
     this.options = optionsHelper(options);
-    this.script = scriptHelper(gaId, this.options, script)
-    this.css = cssHelper(this.options, css)
-    this.html = htmlBuilder(this.options, html)
+    this.script = scriptHelper(gaId, this.options, script);
+    this.css = cssHelper(this.options, css);
+    this.html = htmlBuilder(this.options, html);
   }
   initCheckboxes = () => {
     // initialize injected checkboxes depending on options (default/user options)
@@ -28,7 +28,7 @@ export default class GAConsent {
         checkboxes[ix].disabled = true;
         checkboxes[ix].checked = false;
       }
-    })
+    });
   };
   init = () => {
     domHelper(this.script, this.css, this.html);
