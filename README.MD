@@ -1,5 +1,8 @@
 # Easy google tags cookie accept/deny
 
+| WARNING: Not to be used in EU. Using Google Analytics violates EU law. |
+| --- |
+
 ### Get the script
 
 - Using npm: `npm install gaconsent --save`
